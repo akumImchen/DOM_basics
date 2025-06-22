@@ -1,0 +1,16 @@
+#bulb{
+    height: 160px;
+    width: 160px;
+    border: 3px solid black;
+    border-radius:  150px;  
+}
+button{
+    padding: 20px 30px;
+    margin:30px;
+
+}
+#box{
+    background-color: salmon;
+    height: 100px;
+    width: 100px;
+}
