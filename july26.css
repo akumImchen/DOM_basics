@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+span{
+    height: 70px;
+    width: 70px;
+}
+#grey{
+    background-color:grey;
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    border: 1px solid black;
+
+}
+#white{
+    background-color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 240px;
+    border: 1px solid black;
+
+}
+#blue{
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 320px;
+    border: 1px solid black;
+}
+#yellow{
+    background-color:yellow;
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    border: 1px solid black;
+}
+h4{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
