@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="july29.css">
+</head>
+<body>
+    <ul id="images">
+        <li><img src="sonny.jpeg" id="pic1" alt=""> pic1</li>
+        <li><img src="sonny2.jpeg" id="pic2">pic2</li>
+        <li><img src="sonny3.jpeg" id="pic3">pic3</li>
+    </ul>
+    <script>
+        // const check1=document.querySelector('#pic1')
+        // check1.addEventListener('click',function(){
+        //     alert('pic 1 clciked ')
+        // })
+        // const check2=document.querySelector('#pic2')
+        // check2.addEventListener('click',function(){
+        //     alert('pic 2 checked ')
+        // })
+        // const check3=document.querySelector('#pic3')
+        // check3.addEventListener('click',function(){
+        //     alert('pic 3 checked ')
+        // })
+        // type,timestamp,defaultPrevented,target,toElement,srcElement,currentTarget,clientX,clientY,screenX,screenY,altKey,ctrlKey,shiftKey,keyCode
+
+
+
+        //Event bubbling is a behavior in the DOM where an event starts from the target element (the innermost element where the event occurred) and bubbles up through its ancestors (parent elements) until it reaches the <body> or even document.
+
+        const one=document.querySelector('#images')
+        // one.addEventListener('click',function(){
+        //     console.log('images clicked');
+        // })
+        // const two=document.querySelector('#pic1')
+        // two.addEventListener('click',function(){
+        //     console.log('pic1 clicked');
+        //     event.stopPropagation();//will not bubble out to the outer element or the parent element 
+            
+        // })
+        // if we wanna remove the pics when we click on it 
+        one.addEventListener('click',function(e){
+            console.log(e.target.tagName);
+            //It returns the tag name of the element in UPPERCASE (e.g., "DIV", "SPAN", "LI").
+            if(e.target.tagName==='IMG'){
+                console.log(e.target.id);
+                let removeIt=e.target.parentNode
+                removeIt.remove()  
+            } 
+        })
+    </script>
+</body>
+</html>
